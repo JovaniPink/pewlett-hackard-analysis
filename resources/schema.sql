@@ -2,6 +2,7 @@
 -- Link to schema: https://app.quickdatabasediagrams.com/#/d/yGbzmJ
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
+
 CREATE TABLE "departments" (
     "dept_no" varchar   NOT NULL,
     "dept_name" varchar   NOT NULL,
@@ -57,11 +58,11 @@ CREATE TABLE "salaries" (
 
 CREATE TABLE "titles" (
     "emp_no" int   NOT NULL,
-    "title" int   NOT NULL,
+    "title" varchar   NOT NULL,
     "from_date" date   NOT NULL,
     "to_date" date   NOT NULL,
     CONSTRAINT "pk_titles" PRIMARY KEY (
-        "emp_no"
+        "emp_no","title","from_date"
      )
 );
 
@@ -82,3 +83,4 @@ REFERENCES "employees" ("emp_no");
 
 ALTER TABLE "titles" ADD CONSTRAINT "fk_titles_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "employees" ("emp_no");
+
