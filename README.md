@@ -14,7 +14,7 @@ We did research analysis on employees of Pewlett Hackard Corporation and find an
 
 We made entity relationship diagrams (ERDs):
 
-![Quick DBD Physical Diagrams Connections]("./resources/quickDBDCheatSheet.png")
+![Quick DBD Physical Diagrams Connections](resources/quickDBDCheatSheet.png)
 
 The image above shows the connections between the datasets through primary and foreign keys. This process of **Data Modeling**. The understanding of the data we're working with and finding the connections. QuickDBD webapp allowed us to create a map of the database ... [https://app.quickdatabasediagrams.com/#/d/yGbzmJ](https://app.quickdatabasediagrams.com/#/d/yGbzmJ)
 
